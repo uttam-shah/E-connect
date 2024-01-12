@@ -3,7 +3,7 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background">#fff</color>
+    <color name="background">#F8EEF8</color>
     <color name="textColor">#000</color>
     <color name="textLink">#00008b</color>
     <color name="textColorSecondry">#5B5B5B</color>
@@ -13,4 +13,6 @@
     <color name="start_color">#8A2387</color>
     <color name="mid_color">#E94057</color>
     <color name="end_color">#F27121</color>
+
+    <color name="app_background">#E4D6E6</color>
 </resources>

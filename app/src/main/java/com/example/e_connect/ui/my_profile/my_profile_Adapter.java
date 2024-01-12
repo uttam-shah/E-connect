@@ -25,6 +25,7 @@ public class my_profile_Adapter extends FirebaseRecyclerAdapter<feed_post_Model,
         super(options);
     }
 
+
     @Override
     protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull feed_post_Model model) {
 
@@ -34,8 +35,6 @@ public class my_profile_Adapter extends FirebaseRecyclerAdapter<feed_post_Model,
                     .load(model.getImageUrl())
                     .centerCrop()
                     .into(holder.imageView);
-        }else {
-
         }
     }
 
@@ -55,4 +54,5 @@ public class my_profile_Adapter extends FirebaseRecyclerAdapter<feed_post_Model,
             imageView = (ImageView) itemView.findViewById(R.id.img1);
         }
     }
+
 }

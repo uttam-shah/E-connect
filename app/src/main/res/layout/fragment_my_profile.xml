@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.my_profile.Fragment_my_profile">
+    tools:context=".ui.my_profile.Fragment_my_profile"
+    android:background="@color/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/fragment_toolbar"
@@ -176,7 +177,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="45dp"
                     android:orientation="vertical">
                     <TextView
                         android:id="@+id/display_bio"
@@ -187,15 +188,16 @@
                         android:textStyle="bold"
                         android:textSize="15dp"
                         android:layout_gravity="center"/>
+
                     <TextView
                         android:id="@+id/display_gender"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textColor"
+                        android:layout_gravity="center"
                         android:text="Gender"
-                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
                         android:textSize="15dp"
-                        android:layout_gravity="center"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -221,7 +223,7 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/profileRecycle"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 

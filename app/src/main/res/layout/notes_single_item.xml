@@ -18,6 +18,8 @@
             android:layout_marginTop="8dp"
             android:text="Stream"
             android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:textSize="20dp"/>
         <TextView
             android:id="@+id/notes_subject"
@@ -26,6 +28,8 @@
             android:layout_marginTop="8dp"
             android:text="Subject"
             android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:textSize="20dp"/>
 
     </LinearLayout>
@@ -50,15 +54,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
             android:layout_gravity="top">
 
             <!-- User profile photo -->
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profilePhoto"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/profile"
+                android:src="@drawable/profile_icon"
                 android:layout_margin="8dp"/>
 
             <!-- User name TextView -->
@@ -96,8 +102,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
+        android:background="@color/background"
         android:layout_gravity="bottom">
 
         <!-- Like button -->
@@ -108,6 +117,8 @@
             android:src="@drawable/heart_black"
             android:layout_weight="1"
             android:text="Like"/>
+
+
 
         <ImageView
             android:id="@+id/commenButton"
@@ -139,7 +150,53 @@
             android:text="Like"/>
 
         <!-- TextView at the bottom -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="bottom">
 
+        <!-- Like button -->
+        <TextView
+            android:id="@+id/like_count"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:text="0 Like"/>
+
+
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            android:text="0 Comments"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="Like"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:textColor="@color/textColor"
+            android:text="3 jan"/>
+
+        <!-- TextView at the bottom -->
     </LinearLayout>
     <TextView
         android:id="@+id/notes_subtitle"
@@ -148,7 +205,9 @@
         android:text="Description"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginLeft="15dp"
+        android:background="@color/background"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="35dp"/>
 
 </LinearLayout>

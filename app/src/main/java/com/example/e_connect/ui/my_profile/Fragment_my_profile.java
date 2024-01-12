@@ -1,9 +1,12 @@
 package com.example.e_connect.ui.my_profile;
 
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -23,6 +26,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.e_connect.R;
+import com.example.e_connect.login.Activity_login;
 import com.example.e_connect.upload_post.PostActivity;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
@@ -210,8 +214,24 @@ public class Fragment_my_profile extends Fragment {
         dialogLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Logout  is clicked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "Logout  is clicked", Toast.LENGTH_SHORT).show();
+                // Access the SharedPreferences
+                SharedPreferences preferences = requireActivity().getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
+
+// Create an editor to modify SharedPreferences
+                SharedPreferences.Editor editor = preferences.edit();
+
+// Clear the stored data (remove all key-value pairs)
+                editor.clear();
+
+// Apply the changes
+                editor.apply();
+
                 dialog1.dismiss();
+                Intent intent = new Intent(getContext(), Activity_login.class);
+                startActivity(intent);
+                getActivity().finish();
             }
         });
 
@@ -237,6 +257,22 @@ public class Fragment_my_profile extends Fragment {
             mainAdapter.stopListening();
         }
     }
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mainAdapter != null) {
+            mainAdapter.stopListening();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mainAdapter != null) {
+            mainAdapter.stopListening();
+        }
+    }
+
 
 
 

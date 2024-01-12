@@ -159,6 +159,7 @@ public class Activity_enter_opt extends AppCompatActivity {
                     editor.apply();
 
                     Intent intent = new Intent(Activity_enter_opt.this, Activity_dashboard.class);
+                    intent.putExtra("username", userName);
                     startActivity(intent);
                     finish();
                     // You can proceed to the next activity or handle further actions here
