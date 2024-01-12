@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/single_post_row.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/notes_stream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Stream"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/notes_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Subject"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image View for the post image -->
+
+        <!-- Container for username and profile photo -->
+        <ImageView
+            android:id="@+id/pdfimage"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pdf_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_gravity="top">
+
+            <!-- User profile photo -->
+            <ImageView
+                android:id="@+id/profilePhoto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_margin="8dp"/>
+
+            <!-- User name TextView -->
+            <TextView
+                android:id="@+id/post_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pdficon" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Like, Comment, Share buttons and TextView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+        <!-- Like button -->
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:src="@drawable/heart_black"
+            android:layout_weight="1"
+            android:text="Like"/>
+
+        <ImageView
+            android:id="@+id/commenButton"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:src="@drawable/bubble_chat_black"
+            android:layout_weight="1"
+            android:text="Like"/>
+
+        <ImageView
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:src="@drawable/direct_black"
+            android:layout_weight="1"
+            android:text="Like"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="4"
+            android:text="Like"/>
+
+        <ImageView
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:src="@drawable/bookmark_black_"
+            android:layout_weight="1"
+            android:text="Like"/>
+
+        <!-- TextView at the bottom -->
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/notes_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

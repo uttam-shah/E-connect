@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".login.Activity_register">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="30dp"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your Details"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="16dp">
+
+
+
+            <EditText
+                android:id="@+id/regName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="What's your full name?"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:backgroundTint="@color/editTextBackg"
+                android:textColorHint="@color/textColorSecondry"
+                android:background="@drawable/edittxt_bg"/>
+
+            <EditText
+                android:id="@+id/regDOB"
+                android:layout_width="match_parent"
+                android:inputType="date"
+                android:layout_height="50dp"
+                android:background="@drawable/edittxt_bg"
+                android:padding="12dp"
+                android:layout_marginTop="15dp"
+                android:hint="What's your Date of Birth"
+                android:backgroundTint="@color/editTextBackg"
+                android:textColorHint="@color/textColorSecondry" />
+
+            <EditText
+                android:id="@+id/regPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittxt_bg"
+                android:padding="12dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/editTextBackg"
+                android:textColorHint="@color/textColorSecondry"
+                android:hint="Create a password"/>
+
+            <EditText
+                android:id="@+id/regConfPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittxt_bg"
+                android:padding="12dp"
+                android:layout_marginTop="15dp"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/editTextBackg"
+                android:textColorHint="@color/textColorSecondry"
+                android:hint="Conform your password"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/regNext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/white"
+                android:text="Next"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/logHaveAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/textLink"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>

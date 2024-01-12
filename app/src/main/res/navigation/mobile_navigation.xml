@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.e_connect.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_queries"
+        android:name="com.example.e_connect.ui.queries.Fragment_queries"
+        android:label="@string/title_queries"
+        tools:layout="@layout/fragment_queries" />
+
+    <fragment
+        android:id="@+id/navigation_notes"
+        android:name="com.example.e_connect.ui.notes.Fragment_notes"
+        android:label="@string/title_notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.e_connect.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_my_profile"
+        android:name="com.example.e_connect.ui.my_profile.Fragment_my_profile"
+        android:label="@string/title_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+</navigation>

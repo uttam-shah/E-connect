@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "85356385789",
+    "firebase_url": "https://e-connect-52a5f-default-rtdb.firebaseio.com",
+    "project_id": "e-connect-52a5f",
+    "storage_bucket": "e-connect-52a5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85356385789:android:7c5b4228b8bfdebd9ab594",
+        "android_client_info": {
+          "package_name": "com.example.e_connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDagUb82iMXncoQ_BQnkjq0hQv1_JMTnag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85356385789:android:e6d5070b23bf8b139ab594",
+        "android_client_info": {
+          "package_name": "com.example.firebase_data_to_recyclerview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDagUb82iMXncoQ_BQnkjq0hQv1_JMTnag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

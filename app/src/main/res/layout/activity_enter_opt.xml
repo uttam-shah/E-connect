@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".login.Activity_enter_opt">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your OTP"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/textColor"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/showPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone number"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/textLink"
+                android:textSize="18dp"/>
+
+
+
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittxt_bg"
+                android:hint="OTP"
+                android:backgroundTint="@color/editTextBackg"
+                android:textColorHint="@color/textColorSecondry"
+                android:inputType="number"
+                android:padding="12dp" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVerify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_primary"
+                android:textColor="@color/white"
+                android:text="Verify"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

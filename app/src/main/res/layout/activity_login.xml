@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".login.Activity_login"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/loginphone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username or phone"
+            android:backgroundTint="@color/editTextBackg"
+            android:textColorHint="@color/textColorSecondry"
+            android:background="@drawable/edittxt_bg"
+            android:inputType="textPersonName"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/loginPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/textColorSecondry"
+            android:hint="Password"
+            android:backgroundTint="@color/editTextBackg"
+            android:inputType="textPassword"
+            android:background="@drawable/edittxt_bg"
+            android:padding="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginLogBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_primary"
+            android:textColor="@color/white"
+            android:text="Log in"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/loginForgorPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textLink"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginCrtAccBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create new account"
+            android:textColor="@color/white"
+            android:background="@drawable/button_primary"
+            android:layout_marginBottom="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

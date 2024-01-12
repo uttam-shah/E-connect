@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/single_post_row.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- Image View for the post image -->
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Container for username and profile photo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top">
+
+        <!-- User profile photo -->
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile"
+            android:layout_margin="8dp"/>
+
+        <!-- User name TextView -->
+        <TextView
+            android:id="@+id/post_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Like, Comment, Share buttons and TextView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+        <!-- Like button -->
+        <ImageView
+            android:id="@+id/likeButton"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:src="@drawable/heart_black"
+            android:layout_weight="1"
+            android:text="Like"/>
+
+        <ImageView
+            android:id="@+id/commenButton"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:src="@drawable/bubble_chat_black"
+            android:layout_weight="1"
+            android:text="Like"/>
+
+        <ImageView
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:src="@drawable/direct_black"
+            android:layout_weight="1"
+            android:text="Like"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="4"
+            android:text="Like"/>
+
+        <ImageView
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:src="@drawable/bookmark_black_"
+            android:layout_weight="1"
+            android:text="Like"/>
+
+        <!-- TextView at the bottom -->
+    </LinearLayout>
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Text"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

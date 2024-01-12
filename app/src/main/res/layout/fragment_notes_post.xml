@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload_post.PostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Select PDF file button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonChoosePdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose PDF File"
+            android:background="@drawable/button_primary"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Display selected PDF -->
+        <ImageView
+            android:id="@+id/imageViewPdfPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp" />
+
+        <!-- PDF information fields -->
+        <TextView
+            android:id="@+id/textViewSelectedFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextStream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stream"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Upload PDF button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload PDF"
+            android:background="@drawable/button_primary"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

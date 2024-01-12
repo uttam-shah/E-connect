@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#000</color>
+    <color name="textColor">#fff</color>
+    <color name="textLink">#0892d0</color>
+    <color name="textColorSecondry">#999999</color>
+    <color name="editTextBackg">#36454f</color>
+</resources>
